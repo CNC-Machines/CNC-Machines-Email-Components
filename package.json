@@ -1,0 +1,28 @@
+{
+  "name": "cnc-machines-email-components",
+  "version": "1.0.0",
+  "description": "Email components used by CNC Machines repositories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-components": "mjml ./src/mjml/components/*.mjml -o ./src/html/components",
+    "compile-templates": "mjml ./src/mjml/templates/*.mjml -o ./src/html/templates",
+    "compile-emails": "npm run compile-components && npm run compile-templates"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CNC-Machines/CNC-Machines-Email-Components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CNC-Machines/CNC-Machines-Email-Components/issues"
+  },
+  "homepage": "https://github.com/CNC-Machines/CNC-Machines-Email-Components#readme",
+  "devDependencies": {
+    "mjml": "4.14.1"
+  },
+  "dependencies": {
+    "glob": "10.3.5"
+  }
+}

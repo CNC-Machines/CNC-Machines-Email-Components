@@ -1,0 +1,84 @@
+<mjml>
+  <mj-head>
+    <!-- MJML styles and meta tags -->
+    <mj-attributes>
+      <mj-text font-family="Arial, sans-serif" font-size="16px" color="#424242" padding="0" line-height="1.5" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .header-text a {
+        font-size: 24px;
+        color: #424242;
+        font-weight: 600;
+      }
+
+      .header-text span {
+        font-size: 16px;
+        color: #424242;
+      }
+
+      .footer-text a {
+        color: #424242;
+      }
+    </mj-style>
+    <mj-style>
+      a {
+        text-decoration: none !important;
+      }
+
+      @media only screen and (max-width: 480px) {
+        .header-text a {
+          font-size: 20px !important;
+        }
+
+        .header-text span {
+          font-size: 14px !important;
+        }
+
+        .greeting span {
+          font-size: 16px !important;
+        }
+
+        .image-column {
+          width: 35% !important;
+        }
+
+        .seller-info-column {
+          width: 65% !important;
+        }
+
+        .seller-image td {
+          width: 65px !important;
+        }
+
+        .seller-image td img {
+          width: 65px !important;
+        }
+
+        .seller-info span {
+          font-size: 16px !important;
+        }
+
+        .seller-name span {
+          font-size: 14px !important;
+        }
+
+        .seller-email a {
+          font-size: 14px !important;
+        }
+
+        .listing-title a {
+          font-size: 18px !important;
+        }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#ffffff">
+    <mj-include path="../components/emailHeader.mjml" />
+    <mj-include path="../components/centeredGreetingWithText.mjml" />
+    <mj-include path="../components/centeredListingTitle.mjml" />
+    <mj-include path="../components/centeredSellerInfo.mjml" />
+    <mj-include path="../components/centeredCallToActionButton.mjml" />
+    <mj-include path="../components/emailFooter.mjml" />
+    <mj-include path="../components/emailUnsubscribe.mjml" />
+  </mj-body>
+</mjml>

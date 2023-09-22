@@ -1,0 +1,20 @@
+<mjml>
+  <mj-body>
+    <mj-raw>
+      <!-- Centered Calendar Link Array - used in call confirmation and reminder emails -->
+      <!-- VARIABLES:
+        linkArray
+       -->
+    </mj-raw>
+    <mj-section padding="10px 10px 0 10px">
+      <mj-column>
+        <mj-text align="center" font-size="14px" padding="10px 0 0 0">
+          If the event is not already in your calendar, you may add it with the following links:
+        </mj-text>
+        <mj-text align="center" font-size="14px" padding="10px 0 0 0">
+          {{{ linkArray }}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
