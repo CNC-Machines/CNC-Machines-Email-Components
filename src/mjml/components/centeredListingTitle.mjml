@@ -1,0 +1,20 @@
+<mjml>
+  <mj-body>
+    <mj-raw>
+      <!-- Listing Title Centered, using on initial Chat Notification email, et al. -->
+      <!-- VARIABLES:
+        listingTitle
+        listingLink
+       -->
+    </mj-raw>
+    <mj-section padding="10px 20px 20px 20px">
+      <mj-column>
+        <mj-text align="center" padding="0 0 0 0" css-class="listing-title" font-size="22px" line-height="1.25">
+          <a href="{{ listingLink }}" target="_blank">
+            {{ listing Title }}
+          </a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

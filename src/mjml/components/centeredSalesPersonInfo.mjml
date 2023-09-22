@@ -1,0 +1,32 @@
+<mjml>
+  <mj-body>
+    <mj-raw>
+      <!-- Centered Sales Person Info - for Scheduled Call Confirmation and Reminder emails -->
+      <!-- VARIABLES:
+        salesPersonName
+        salesPersonEmail
+        salesPersonPhone
+        salesPersonPhoneFormatted
+        salesPersonPhoto
+       -->
+    </mj-raw>
+    <mj-section padding="20px 20px 0 20px">
+      <mj-group vertical-align="middle">
+        <mj-column width="40%" css-class="image-column" vertical-align="middle">
+          <mj-image padding="0 10px 0 0" align="right" width="75px" alt="sales-person" css-class="seller-image" src="{{ salesPersonPhoto }}" />
+        </mj-column>
+        <mj-column width="60%" css-class="seller-info-column" vertical-align="middle">
+          <mj-text css-class="seller-info" font-size="18px">
+            <span>{{ salesPersonName }}</span>
+          </mj-text>
+          <mj-text css-class="seller-email">
+            <a href="mailto:{{ salesPersonEmail }}">{{ salesPersonEmail }}</a>
+          </mj-text>
+          <mj-text css-class="seller-email">
+            <a href="tel:+1{{ salesPersonPhone }}" target="_blank">{{ salesPersonPhoneFormatted }}</a>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+  </mj-body>
+</mjml>

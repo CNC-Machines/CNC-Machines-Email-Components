@@ -1,0 +1,29 @@
+<mjml>
+  <mj-body>
+    <mj-raw>
+      <!-- Standard Email Header with Logo, Phone and Sent At Date -->
+      <!-- VARIABLES:
+        companyLogo
+        companyName
+        baseUrl
+        sentAt
+        companyPhone
+        companyPhoneFormatted
+       -->
+    </mj-raw>
+    <mj-section padding="10px">
+      <mj-group vertical-align="middle">
+        <mj-column width="40%" vertical-align="middle">
+          <mj-image src="{{ companyLogo }}" width="100px" alt="{{ companyName }}" align="left" border="0" padding="0 0 0 0" href="{{ baseUrl }}" />
+        </mj-column>
+        <mj-column width="60%" vertical-align="middle">
+          <mj-text align="right" line-height="1.25" css-class="header-text">
+            <span>{{ sentAt }}</span>
+            <br />
+            <a href="tel:+1{{ companyPhone }}" target="_blank">{{ companyPhoneFormatted }}</a>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+  </mj-body>
+</mjml>

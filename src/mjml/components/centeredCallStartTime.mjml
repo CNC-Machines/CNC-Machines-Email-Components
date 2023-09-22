@@ -1,0 +1,17 @@
+<mjml>
+  <mj-body>
+    <mj-raw>
+      <!-- Centered Call start time - for Scheduled Call Confirmation and Reminder emails -->
+      <!-- VARIABLES:
+        callStartTime
+       -->
+    </mj-raw>
+    <mj-section padding="10px 10px 0 10px">
+      <mj-column>
+        <mj-text align="center" font-size="24px" font-weight="600" css-class="start-time" padding="0 0 0 0">
+          <span>{{ callStartTime }}</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

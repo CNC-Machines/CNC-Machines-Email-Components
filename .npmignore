@@ -1,0 +1,9 @@
+node_modules/
+npm-debug.log
+.git/
+.vscode/
+./src/mjml
+package-lock.json
+.history/
+.gitignore
+.npmignore

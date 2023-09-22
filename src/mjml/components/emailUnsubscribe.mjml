@@ -1,0 +1,21 @@
+<mjml>
+  <mj-body>
+    <mj-raw>
+      <!-- Standard EmailUnsubscribe with Disclaimer text - Used globally -->
+      <!-- VARIABLES:
+        unsubscribeLink
+        baseUrl
+       -->
+    </mj-raw>
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="11px" color="#888888" align="center" padding="10px 20px 0 20px">
+          Please Note: All information provided MUST be confirmed and verified by clients. Clients can
+          <a href="{{ unsubscribeLink }}" target="_blank" style="color: #888888; font-weight: 600;"> manage preferences, </a>
+          review privacy policy and see terms and conditions on
+          <a href="{{ baseUrl }}" style="color: #888888; font-weight: 600;" target="_blank">{{ baseUrl }}</a>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

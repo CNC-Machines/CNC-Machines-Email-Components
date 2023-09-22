@@ -1,0 +1,31 @@
+<mjml>
+  <mj-body>
+    <mj-raw>
+      <!-- Seller Info with photo to the left of name and chat email -->
+      <!-- VARIABLES:
+        listingSellerPhoto
+        listingSellerName
+        listingSellerEmail
+        emailSubject
+       -->
+    </mj-raw>
+    <mj-section padding="5px 10px 0 10px">
+      <mj-group vertical-align="middle">
+        <mj-column width="40%" css-class="image-column" vertical-align="middle">
+          <mj-image padding="0 10px 0 0" align="right" width="75px" alt="seller" css-class="seller-image" src="{{ listingSellerPhoto }}" />
+        </mj-column>
+        <mj-column width="60%" css-class="seller-info-column" vertical-align="middle">
+          <mj-text css-class="seller-info" font-size="18px">
+            <span>Seller Info</span>
+          </mj-text>
+          <mj-text css-class="seller-name">
+            <span>{{ listingSellerName }}</span>
+          </mj-text>
+          <mj-text css-class="seller-email">
+            <a href="mailto:{{ listingSellerEmail }}?subject={{ emailSubject }}" target="_blank">{{ listingSellerEmail }}</a>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+  </mj-body>
+</mjml>

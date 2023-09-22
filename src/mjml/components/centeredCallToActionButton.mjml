@@ -1,0 +1,18 @@
+<mjml>
+  <mj-body>
+    <mj-raw>
+      <!-- Centered Call to Action Button, using on initial Chat Notification email, et al. -->
+      <!-- VARIABLES:
+        callToActionButtonText
+        callToActionButtonLink
+       -->
+    </mj-raw>
+    <mj-section padding="15px 10px 0 10px">
+      <mj-column>
+        <mj-button css-class="schedule-button" background-color="#1890ff" font-size="16px" href="{{ callToActionButtonLink }}">
+          {{ callToActionButtonText }}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

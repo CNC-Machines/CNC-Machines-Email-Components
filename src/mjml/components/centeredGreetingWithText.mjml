@@ -1,0 +1,21 @@
+<mjml>
+  <mj-body>
+    <mj-raw>
+      <!-- Centered Greeting with text on line below. Example: Hi, Matthew \n Your message has been sent! -->
+      <!-- VARIABLES:
+        greetingWithName
+        textBelowGreeting
+       -->
+    </mj-raw>
+    <mj-section padding="20px 20px 0 20px">
+      <mj-column>
+        <mj-text align="center" padding="0 0 0 0" css-class="greeting" font-size="18px">
+          <span>{{ greetingWithName }}</span>
+        </mj-text>
+        <mj-text align="center" padding="0 0 0 0" css-class="greeting" font-size="18px">
+          <span>{{ textBelowGreeting }}</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
