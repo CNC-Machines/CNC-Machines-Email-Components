@@ -11,7 +11,7 @@
     <mj-section padding="20px 10px 0 10px">
       <mj-column>
         <mj-carousel left-icon="https://cdn.cncmachines.com/icons/listing-carousel-prev.png" right-icon="https://cdn.cncmachines.com/icons/listing-carousel-next.png" border-radius="2px" thumbnails="hidden">
-          {{{ images }}}
+          <mj-carousel-image src="https://cdn.cncmachines.com/2023/August/HAAS-VF4SS-2020-1693461768403-detail" href="" css-class="carousel-image-class" />
         </mj-carousel>
       </mj-column>
     </mj-section>
