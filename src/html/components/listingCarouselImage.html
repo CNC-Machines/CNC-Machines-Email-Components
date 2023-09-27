@@ -1,9 +1,5 @@
-<td style="padding:0px;">
-  <div>{{ imageCount }}</div>
-  <div class="mj-carousel-images">
-    <div class="mj-carousel-image mj-carousel-image-1 carousel-image-class" style>
-      <img src="{{ detailUrl }}" style="border-radius:2px;display:block;width:580px;max-width:100%;height:auto;"
-        width="580" border="0">
-    </div>
-  </div>
-</td>
+<div class="mj-carousel-image mj-carousel-image-{{value}} carousel-image-class" style>
+  <div>{{imageCount}}</div>
+  <img src="{{detailUrl}}" style="border-radius:2px;display:block;width:580px;max-width:100%;height:auto;" width="580"
+    border="0">
+</div>
