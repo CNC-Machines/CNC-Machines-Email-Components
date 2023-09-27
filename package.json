@@ -1,6 +1,6 @@
 {
   "name": "cnc-machines-email-components",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Email components used by CNC Machines repositories",
   "main": "index.js",
   "scripts": {
