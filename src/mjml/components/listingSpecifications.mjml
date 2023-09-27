@@ -1,0 +1,20 @@
+<mjml>
+  <mj-body background-color="#fff">
+    <mj-raw>
+      <!-- Listing Specifications - used in Instaquote emails -->
+      <!-- VARIABLES:
+        specsArray: array of specs
+       -->
+    </mj-raw>
+    <mj-section padding="20px 20px 0 20px">
+      <mj-group>
+        <mj-column width="30%" vertical-align="middle" css-class="label-column">
+          <mj-text padding="5px 0 0 0" font-weight="600" font-size="16px" align="right">Specs:</mj-text>
+        </mj-column>
+        <mj-column width="70%" vertical-align="middle" css-class="value-column">
+          <mj-text padding="5px 0 0 10px" font-size="16px" align="left">{{ specsArray }}</mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+  </mj-body>
+</mjml>

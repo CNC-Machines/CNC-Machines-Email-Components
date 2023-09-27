@@ -1,0 +1,211 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Helvetica, sans-serif" />
+      <mj-text font-size="14px" color="#424242" padding="0" line-height="1.5" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .header-text a {
+        font-size: 24px;
+        color: #424242;
+        font-weight: 600;
+      }
+
+      .header-text span {
+        font-size: 16px;
+        color: #424242;
+      }
+
+      .footer-text a {
+        color: #424242;
+      }
+
+      .listing-title a {
+        color: #424242;
+      }
+    </mj-style>
+    <mj-style>
+      a {
+        text-decoration: none !important;
+      }
+
+      .mj-carousel-main {
+        display: table !important;
+      }
+
+      .carousel-class-yyyyyyyyyyy {
+        width: 100%;
+        max-height: 350px !important;
+      }
+
+      .carousel-class-yyyyyyyyyyy img {
+        max-height: 350px !important;
+        width: auto !important;
+        margin: 0 auto;
+      }
+
+      @media only screen and (max-width: 480px) {
+        .header-text a {
+          font-size: 20px !important;
+        }
+
+        .header-text span {
+          font-size: 14px !important;
+        }
+
+        .listing-title a {
+          font-size: 20px !important;
+        }
+
+        .carousel-class-yyyyyyyyyyy {
+          max-height: 160px !important;
+        }
+
+        .carousel-class-yyyyyyyyyyy img {
+          max-height: 160px !important;
+        }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#ffffff">
+    <mj-section padding="10px">
+      <mj-group vertical-align="middle">
+        <mj-column width="40%" vertical-align="middle">
+          <mj-image src="https://cncmachinescom.s3.amazonaws.com/logos/cnc-logos/logo-recon-email.png" width="100px" alt="CNC MACHINES" align="left" border="0" padding="0 0 0 0" href="https://cncmachines.com" />
+        </mj-column>
+        <mj-column width="60%" vertical-align="middle">
+          <mj-text align="right" line-height="1.25" css-class="header-text">
+            <span>{{ sentAt }}</span>
+            <br />
+            <a href="tel:+18442626789" target="_blank">(844) 262-6789</a>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding="20px 10px 0 10px">
+      <mj-column>
+        <mj-carousel border-radius="2px" tb-border-radius="2px" tb-hover-border-color="#1890ff" tb-selected-border-color="#1890ff" tb-width="90px" css-class="carousel-class-xxxxxxxxxx" thumbnails="hidden">
+          <mj-carousel-image thumbnails-src="https://cdn.cncmachines.com/2023/August/HAAS-VF4SS-2020-1693461768403-thumbnail" src="https://cdn.cncmachines.com/2023/August/HAAS-VF4SS-2020-1693461768403-detail" href="" css-class="carousel-class-yyyyyyyyyyy" />
+          <mj-carousel-image thumbnails-src="https://cdn.cncmachines.com/2023/January/SHOPSABRE-23-2021-1674505943923-thumbnail" src="https://cdn.cncmachines.com/2023/January/SHOPSABRE-23-2021-1674505943923-detail" href="" css-class="carousel-class-yyyyyyyyyyy" />
+        </mj-carousel>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px 10px 0 10px">
+      <mj-column>
+        <mj-text css-class="listing-title" padding="0 0 0 0" font-size="28px" align="center" color="#424242">
+          <a href="" target="_blank">
+            {{ listingTitle }}
+          </a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px 10px 0 10px">
+      <mj-column>
+        <mj-accordion>
+          {{ listingBlurb }}
+        </mj-accordion>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px 10px 0 10px">
+      <mj-group>
+        <mj-column width="25%">
+          <mj-text align="right" font-weight="600" font-size="16px">
+            Brand:
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0 0 0 10px">
+          <mj-text font-size="16px">
+            {{ brandName }}
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding="5px 10px 0 10px">
+      <mj-group>
+        <mj-column width="25%">
+          <mj-text align="right" font-weight="600" font-size="16px">
+            Model:
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0 0 0 10px">
+          <mj-text font-size="16px">
+            {{ modelName }}
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding="5px 10px 0 10px">
+      <mj-group>
+        <mj-column width="25%">
+          <mj-text align="right" font-weight="600" font-size="16px">
+            Year:
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0 0 0 10px">
+          <mj-text font-size="16px">
+            {{ year }}
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding="5px 10px 0 10px">
+      <mj-group>
+        <mj-column width="25%">
+          <mj-text align="right" font-weight="600" font-size="16px">
+            Category:
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0 0 0 10px">
+          <mj-text font-size="16px">
+            {{ categoryName }}
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding="5px 10px 0 10px">
+      <mj-group>
+        <mj-column width="25%">
+          <mj-text align="right" font-weight="600" font-size="16px">
+            ID:
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0 0 0 10px">
+          <mj-text font-size="16px">
+            {{ listingId }}
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding="5px 10px 0 10px">
+      <mj-group>
+        <mj-column width="25%">
+          <mj-text align="right" font-weight="600" font-size="16px">
+            Specs:
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0 0 0 10px">
+          <mj-text font-size="16px">
+            {{ specsArray }}
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding="20px 10px 0 10px">
+      <mj-group>
+        <mj-column width="25%">
+          <mj-text align="right" font-weight="600" font-size="16px">
+            Q &amp; A:
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0 0 0 10px">
+          <mj-text font-size="16px">
+            {{ specsArray }}
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+  </mj-body>
+</mjml>

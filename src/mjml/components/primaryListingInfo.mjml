@@ -1,0 +1,52 @@
+<mjml>
+  <mj-body background-color="#fff">
+    <mj-raw>
+      <!-- Primary Listing Info: Brand, Model, Year, Category and Listing ID - used in Instaquote emails -->
+      <!-- VARIABLES:
+        brandName
+        modelName
+        year
+        categoryName
+        listingId
+       -->
+    </mj-raw>
+    <mj-section padding="20px 20px 0 20px">
+      <mj-group>
+        <mj-column width="30%" vertical-align="middle" css-class="label-column">
+          <mj-text padding="5px 0 0 0" font-weight="600" font-size="16px" align="right">Brand:</mj-text>
+        </mj-column>
+        <mj-column width="70%" vertical-align="middle" css-class="value-column">
+          <mj-text padding="5px 0 0 10px" font-size="16px" align="left">{{ brandName }}</mj-text>
+        </mj-column>
+
+        <mj-column width="30%" vertical-align="middle" css-class="label-column">
+          <mj-text padding="10px 0 0 0" font-weight="600" font-size="16px" align="right">Model:</mj-text>
+        </mj-column>
+        <mj-column width="70%" vertical-align="middle" css-class="value-column">
+          <mj-text padding="10px 0 0 10px" font-size="16px" align="left">{{ modelName }}</mj-text>
+        </mj-column>
+
+        <mj-column width="30%" vertical-align="middle" css-class="label-column">
+          <mj-text padding="10px 0 0 0" font-weight="600" font-size="16px" align="right">Year:</mj-text>
+        </mj-column>
+        <mj-column width="70%" vertical-align="middle" css-class="value-column">
+          <mj-text padding="10px 0 0 10px" font-size="16px" align="left">{{ year }}</mj-text>
+        </mj-column>
+
+        <mj-column width="30%" vertical-align="middle" css-class="label-column">
+          <mj-text padding="10px 0 0 0" font-weight="600" font-size="16px" align="right">Category:</mj-text>
+        </mj-column>
+        <mj-column width="70%" vertical-align="middle" css-class="value-column">
+          <mj-text padding="10px 0 0 10px" font-size="16px" align="left">{{ categoryName }}</mj-text>
+        </mj-column>
+
+        <mj-column width="30%" vertical-align="middle" css-class="label-column">
+          <mj-text padding="10px 0 0 0" font-weight="600" font-size="16px" align="right">ID:</mj-text>
+        </mj-column>
+        <mj-column width="70%" vertical-align="middle" css-class="value-column">
+          <mj-text padding="10px 0 0 10px" font-size="16px" align="left">{{ listingId }}</mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+  </mj-body>
+</mjml>
