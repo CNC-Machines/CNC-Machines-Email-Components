@@ -8,4 +8,4 @@ package-lock.json
 .history/
 .gitignore
 .npmignore
-index.js
+./index.js
