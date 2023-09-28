@@ -1,9 +1,11 @@
 node_modules/
 npm-debug.log
 .git/
+src/html
 .vscode/
 src/mjml
 package-lock.json
 .history/
 .gitignore
 .npmignore
+src/index.js
